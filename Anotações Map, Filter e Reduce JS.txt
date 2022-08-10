@@ -1,0 +1,39 @@
+Array = lista de dados.
+
+Método Map - O que é:
+- Um conjunto passa por uma operação e se torna outro conjunto;
+- Set = conjunto;
+- Os números do conjunto A se tornaram os números do conjunto B: foram conectados pela função chamada mapping function (y = 2x);
+- y = conjunto B;
+- x = conjunto A;
+- y = f(x).
+
+Sintaxe:
+- thisArg = pouco utilizado;
+- callback = funciona somente com item, não precisa de todos os parametros.
+
+Map vs forEach:
+- forEach = precisa colocar a operação dentro de alguma constante, caso queira utilizar o array que resultou desta operação (para não retornar undefined) - array.forEach((item) => item * 2).
+
+Método Filter:
+- Array dentro de um filtro e apenas os itens que corresponderem a determinada condição vão ser retornados.
+
+Sintaxe - Parâmetros.
+
+Exemplo:
+- Array = frutas (frutas.filter);
+- Função de callback;
+- Item: sempre vai começar pelo primeiro argumento, pode dar qualquer nome (fruta) - ((fruta) => fruta.includes('maçã'));
+- includes = se inclui maçã.
+
+Método Reduce:
+
+- Blocos --> executar uma função JS --> juntar os blocos e retornar apenas 1 valor.
+
+Sintaxe:
+- initialValue = opcional;
+- currentValue =  valor atual;
+- index do valor atual;
+- prevValue = valor anterior;
+- Ex: initialValue = 0; accumulator = 0; Array = 1 e 2; currentValue = 1; accumulator + currentValue; accumulator = 1; currentValue = 2;
+- Não precisa mandar todos os parâmetros (index e array = usar se tiver necessidade).
